@@ -41,8 +41,7 @@ export default {
     // Necessary for some people in different countries, e.g. China (https://cn.bing.com)
     host: "",
     // The "_U" cookie value from bing.com
-    userToken:
-      "13IbFoxYS_SwQR3bZucLdsI8CMDw2OSzXVxeSvWpOzIJz5b-ikH54hSno1PsW0cDcDCHNQfem-LtMHaw9IHaVESqwk01W6qSVYtQFKstZbXocw0sZgxXSiLdFchEjF9cXRBkQI1QYkk9HdhbTPidw_qCrfQolgq0rD7W7b6ndqC3j-nySFYWyvniKD5jn-3pIDF2C-7N7Xr62pv4X-F4J7w",
+    userToken: process.env.BING_USER_TOKEN || "",
     // If the above doesn't work, provide all your cookies as a string instead
     cookies: "",
     // A proxy string like "http://<ip>:<port>"
