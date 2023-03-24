@@ -203,6 +203,7 @@ dist
 # node-chatgpt-api
 
 test.js
+settings.js
 *.test.js
 *.cast
 cache.json
