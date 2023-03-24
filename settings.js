@@ -54,7 +54,7 @@ export default {
     // Warning: This will expose your access token to a third party. Consider the risks before using this.
     reverseProxyUrl: "https://bypass.duti.tech/api/conversation",
     // Access token from https://chat.openai.com/api/auth/session
-    accessToken: "",
+    accessToken: process.env.CHATGPT_BROWSER_TOKEN || "",
     // Cookies from chat.openai.com (likely not required if using reverse proxy server).
     cookies: "",
     // A proxy string like "http://<ip>:<port>"
